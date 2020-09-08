@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Mikhail Sitnikov](https://up.htmlacademy.ru/htmlcss/29/user/1537799).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Беллавин](https://htmlacademy.ru/profile/bellavin).
 
 ---
 
