@@ -1,0 +1,26 @@
+{
+  "name": "technomart",
+  "version": "1.0.0",
+  "description": "* Студент: [Mikhail Sitnikov](https://up.htmlacademy.ru/htmlcss/29/user/1537799). * Наставник: [Дмитрий Беллавин](https://htmlacademy.ru/profile/bellavin).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justMikhail/technomart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justMikhail/technomart/issues"
+  },
+  "homepage": "https://github.com/justMikhail/technomart#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.1.0"
+  }
+}
