@@ -6,24 +6,285 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
+    <!--==Header===========================================================-->
     <header>
-      <div class="header__top">
-
+      <div class="header__logo">
+        <a>
+          <img src="img/logo-technomart.svg" alt="Лого Техномарт">
+        </a>
       </div>
-      <div class="header__botton">
-        <nav>
-          <ul>
-            <li><a href="">Главная</a></li>
-            <li><a href="">Компания</a></li>
-            <li><a href="">Каталог</a></li>
-            <li><a href="">Новости</a></li>
-            <li><a href="">Спецпредложения</a></li>
-            <li><a href="">Доставка</a></li>
-            <li><a href="">Контакты</a></li>
-          </ul>
-        </nav>
+      <input type="search" placeholder="Поиск:" autofocus>
+      <h3>Меню пользователя</h3>
+      <ul>
+        <li><button type="button">Закладки: 0</button></li>
+        <li><button type="button">Корзина: 0</button></li>
+        <li><button type="button">Оформить заказ</button></li>
+      </ul>
+      <p>Интернет-магазин строительных материалови инструментов для ремонта</p>
+      <section>
+        <h3>Контактная информация</h3>
+        <a href="tel:++78125550555">+7 (812) 555-05-55</a>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      </section>
+      <div>
+        <ul>
+          <li><a href="">Войти</a></li>
+          <li><a href="">Регистрация</a></li>
+        </ul>
       </div>
+      <!--==Навигация по сайту==============================================-->
+      <nav>
+        <h3>Меню навигации по сайту</h3>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#about-us">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="catalog.html">Спецпредложения</a></li>
+          <li><a href="#delivery">Доставка</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
+    <!--==Main==================================-->
+    <main>
+      <h1>Компания "Техномарт"</h1>
+      <!--==Каталог. Слайдер===============================================-->
+      <section>
+        <h2>Каталог. Предложения. Доставка</h2>
+        <ul>
+          <li>
+            <a href="#">
+              <h3>Материалы</h3>
+              <p>на любой вкус</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h3>Инструменты</h3>
+              <p>на все случаи</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h3>Техника</h3>
+              <p>для стройки</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h3>Скидки 50%</h3>
+              <p>на 350 товаров</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h3>Доставка</h3>
+              <p>бесплатно</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div>
+        <h3>Слайдер. Каталог.</h3>
+        <a href="catalog.html">открыть каталог</a>
+      </div>
+      <!--==Популярные товары==========================================-->
+      <section>
+        <div>
+          <h2>Популярные товары</h2>
+          <a href="#">Все популярные товары</a>
+        </div>
+        <ul>
+          <li>
+            <article>
+              <img src="img/popular-position/1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+              <h3>Перфоратор BOSCH BFG 9000</h3>
+              <p>32500 Р.</p>
+              <p>25500 Р.</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="img/popular-position/2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              <h3>Перфоратор BOSCH BFG 3000</h3>
+              <p>22500 Р.</p>
+              <p>15500 Р.</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="img/popular-position/3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <h3>Перфоратор BOSCH BFG 6000</h3>
+              <p>30500 Р.</p>
+              <p>25500 Р.</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="img/popular-position/4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+              <h3>Перфоратор BOSCH BFG 2000</h3>
+              <p">12500 Р.</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <!--==Популярные производители======================================-->
+      <section>
+        <div>
+          <h2>Популярные производители:</h2>
+          <a href="#">Все производители</a>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="img/popular-brands/1.jpg" alt="BOSCH">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/popular-brands/2.jpg" alt="MAKITA">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/popular-brands/3.jpg" alt="DEWALT">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/popular-brands/4.jpg" alt="ИНТЕРСКОЛ">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/popular-brands/5.jpg" alt="HITACHI">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/popular-brands/6.jpg" alt="LG">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/popular-brands/7.jpg" alt="AEG">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/popular-brands/8.jpg" alt="METABO">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--==Сервисы==============================================================================-->
+      <section id="delivery">
+        <h2>Сервисы</h2>
+          <ul>
+            <li>
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо<br>
+                к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем,<br>
+                поднимая его на ваш этаж!</p>
+            </li>
+            <li>
+              <h3>Гарантия</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing<br>
+                elit. Cumque quos, corrupti, magni perspiciatis<br>
+                autem reprehenderit natus porro<br>
+                rem cupiditate esse aperiam</p>
+            </li>
+            <li>
+              <h3>Кредит</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing<br>
+                elit. Cumque quos, corrupti, magni perspiciatis<br>
+                autem reprehenderit natus porro<br>
+                rem cupiditate esse aperiam</p>
+            </li>
+          </ul>
+      </section>
+      <!--==О компании==============================================================================-->
+      <section id="about-us">
+        <h2>КОМПАНИЯ «Техномарт»</h2>
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
+          ремонта и строительства не оставит равнодушными любителей сэкономить на<br>
+          гастарбайтерах.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!</p>
+        <p>Техномарт работает со многими транспортными компаниями:</p>
+        <ul>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <button>Подробнее о компании</button>
+      </section>
+      <!--==Контакты==============================================================================-->
+      <section>
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами,<br>
+          заехав в наш офис:</p>
+        <!--Здесь будет Pop-up или интерактивная карта-->
+        <button>Заблудились? Напишите нам!</button>
+      </section>
+		</main>
+		<!--==Footer==============================================================================-->
+    <footer>
+      <div>
+        <h2>Меню навигации в шапке сайта</h2>
+        <div class="header__logo">
+          <a>
+            <img src="img/logo-technomart.svg" alt="Лого Техномарт">
+          </a>
+        </div>
+        <ul>
+          <li><a href="about-us.html">Компания</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#delivery">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Как нас найти</h2>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a href="tel:++78125550555">+7 (812) 555-05-55</a>
+      </div>
+      <div>
+        <h2>Меню навигации по каталогу сайта</h2>
+        <ul>
+          <li><a href="#">Материалы</a></li>
+          <li><a href="#">Техника</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+        </ul>
+      </div>
+      <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
+      <section>
+				<h2>Ссылки на социальные сети</h2>
+				<ul>
+					<li>
+						<a href="#">Vkontakte</a>
+					</li>
+					<li>
+						<a href="#">Facebook</a>
+					</li>
+					<li>
+						<a href="#">Инстаграм</a>
+					</li>
+				</ul>
+			</section>
+			<p>
+				Обратная связь:
+				<a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+			</p>
+			<p>
+				Разработано -
+				<a href="htmlacademy.ru">htmlacademy.ru</a>
+			</p>
+    </footer>
   </body>
 </html>
