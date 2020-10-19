@@ -53,6 +53,21 @@
 :root {
   --white: #FFFFFF;
   --black: #000000;
+
+  --basic-gray-background: #F1F5F7;
+
+  --basic-darkblue: #293449;
+
+  --basic-red: #EE3643;
+  --hover-red: #ca2c37;
+  --active-red: #ba2732;
+
+  --basic-green: #63A63E;
+
+  --logo-opacity: rgba(0, 0, 0, 0.24);
+
+  --active-bookmarks: #161D29;
+
 }
 
 // CSS animation-----------------------------------------------------------------------------------
@@ -60,6 +75,15 @@
 
 
 // Независимые классы------------------------------------------------------------------------------
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  box-sizing: border-box;
+}
 
 .visually-hidden {
   position: absolute;
@@ -74,12 +98,157 @@
   clip-path: inset(100%);
 }
 
-// Grid--------------------------------------------------------------------------------------------
+.logo {
+  background-color: var(--basic-red);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.main-body {
-  position: relative;
-  margin: 0;
-  padding: 0;
+  &:after {
+    content: "";
 
-  font-family: "Cuprum", "PT Sans", sans-serif;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 100%;
+    height: 5px;
+
+    background-color: var(--basic-red);
+    box-shadow: inset 0 -5px 0 var(--logo-opacity);
+  }
+
+  &:active {
+    background-color: var(--active-red);
+  }
 }
+
+// Grid and other----------------------------------------------------------------------------------
+
+
+
+// page--------------------------------------------------------------------------------------------
+
+.page {
+  height: 100%;
+
+    &__body {
+      // Grid сетка страницы
+      min-height: 100%;
+      display: grid;
+      grid-template-rows: min-content 1fr min-content;
+      align-content: start; // распределение пространства вдоль блочной оси grid контейнера
+
+      position: relative;
+      margin: 0;
+      padding: 0;
+      border: 0;
+
+      font-family: "Cuprum", "PT Sans", sans-serif;
+      background-color: var(--white);
+    }
+
+    &__header {
+      background-color: var(--basic-gray-background);
+    }
+
+    &__main {
+
+    }
+
+    &__footer {
+
+    }
+}
+
+// header------------------------------------------------------------------------------------------
+
+// header-top
+
+.header-top {
+  background-color: var(--basic-darkblue);
+  margin-bottom: 42px;
+
+
+  &__row {
+    display: flex;
+    align-items:center;
+    height: 42px;
+  }
+
+  &__logo {
+    height: 100%;
+    width: 220px;
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      bottom: -5px;
+      width: 100%;
+      right: 0;
+      height: 5px;
+
+      background-color: var(--basic-red);
+
+      box-shadow: inset 0 -5px 0 var(--logo-opacity);
+    }
+  }
+
+
+  &__search {
+    height: 100%;
+    display: flex;
+    flex: 1 1 auto;
+  }
+
+  &__search-submit {
+    background-color: var(--basic-darkblue);
+  }
+
+  &__search-icon {
+  }
+
+  &__search-input {
+    background-color: var(--basic-darkblue);
+    font-family: inherit;
+    border: none;
+    cursor: pointer
+  }
+
+// header-top__menu
+  &__menu {
+    height: 100%;
+    display: flex;
+    li {
+      list-style: none;
+    }
+  }
+
+  &__button {
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__bookmarks {
+    text-decoration: none;
+    color: var(--white);
+    list-style: none;
+  }
+
+  &__basket {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  &__order {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--basic-green);
+  }
+}
+
+// header-main
