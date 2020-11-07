@@ -8,8 +8,8 @@
 
 // CSS animation-----------------------------------------------------------------------------------
 @keyframes bounce {
-  0% {transform: translateY(350px);}
-  100% {transform: translateY(0);}
+  0% {transform: translateY(150px);}
+  100% {transform: translateY(-50%);}
 }
 
 @keyframes shake {
@@ -284,7 +284,7 @@ img {
     font-family: inherit;
     transition-duration: 0.3s;
     // Шрифты
-    font-family: 'Cuprum';
+    font-family: 'Cuprum', "Arial", sans-serif;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
@@ -421,7 +421,7 @@ img {
       padding: 0px 0px 0px 30px;
       margin: -4px 0px 0px 0px;
       //Шрифт
-      font-family: 'Cuprum';
+      font-family: 'Cuprum', "Arial", sans-serif;
       font-weight: normal;
       font-style: italic;
       color: var(--basic-red);
@@ -454,7 +454,7 @@ img {
       box-sizing: border-box;
 
       //Шрифты
-      font-family: 'Cuprum';
+      font-family: 'Cuprum', "Arial", sans-serif;
       font-weight: bold;
       font-size: 21px;
       line-height: 30px;
@@ -562,7 +562,7 @@ img {
     height: 100%;
     transition-duration: 0.3s;
     // Шрифты
-    font-family: 'Cuprum';
+    font-family: 'Cuprum', "Arial", sans-serif;
     font-weight: normal;
     font-size: 21px;
     line-height: 21px;
@@ -621,7 +621,7 @@ img {
     text-decoration: none;
     transition-duration: 0.3s;
     // Шрифты
-    font-family: 'Cuprum';
+    font-family: 'Cuprum', "Arial", sans-serif;
     font-weight: normal;
     font-size: 16px;
     line-height: 18px;
@@ -811,9 +811,9 @@ img {
             width: 100px;
       height: 30px;
 
-      background-color: var(--basic-red, #EE3643);
+      background-color: var(--basic-red);
       transform: rotate(45deg);
-      color: var(--white, white);
+      color: var(--white);
       text-transform: uppercase;
     }
   }
@@ -1077,7 +1077,7 @@ img {
     padding: 0px 15px;
     flex: 1 0 auto;
     // Шрифты
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 18px;
@@ -1108,7 +1108,7 @@ img {
     flex-direction: column;
     margin: -6.5px 0px;
     // Шрифты
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 17px;
@@ -1162,6 +1162,7 @@ img {
 
   &__button {
     display: block;
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1176,7 +1177,7 @@ img {
     }
 
     // Шрифты
-    font-family: 'Cuprum';
+    font-family: 'Cuprum', "Arial", sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 14px;
@@ -1251,9 +1252,9 @@ img {
             width: 100px;
       height: 30px;
 
-      background-color: var(--basic-red, #EE3643);
+      background-color: var(--basic-red);
       transform: rotate(45deg);
-      color: var(--white, white);
+      color: var(--white);
       text-transform: uppercase;
     }
   }
@@ -1367,7 +1368,7 @@ img {
     border-bottom: 1px solid var(--basic-darkblue);
 
     // Шрифты
-    font-family: 'Cuprum';
+    font-family: 'Cuprum', "Arial", sans-serif;
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
@@ -1452,7 +1453,7 @@ img {
   &__item-title {
     margin: 0px 0px 30px 0px;
     // Шрифты
-    font-family: 'Cuprum';
+    font-family: 'Cuprum', "Arial", sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 30px;
@@ -1464,7 +1465,7 @@ img {
     margin: 0px 0px 0px 0px;
     max-width: 400px;
     // Шрифты
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
@@ -1502,7 +1503,7 @@ img {
   &__title {
     margin: 0px;
     // Шрифты
-    font-family: 'Cuprum';
+    font-family: 'Cuprum', "Arial", sans-serif;
     font-weight: normal;
     font-size: 30px;
     line-height: 30px;
@@ -1514,7 +1515,7 @@ img {
     padding: 28px 0px 0px 0px;
     flex: 1 1 auto;
     // Шрифты
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
@@ -1547,7 +1548,7 @@ img {
     margin-bottom: 12px;
     position: relative;
     // Шрифты
-    font-family: 'Cuprum';
+    font-family: 'Cuprum', "Arial", sans-serif;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
@@ -1797,7 +1798,7 @@ img {
   padding: 0;
   margin: 0;
   // Шрифты
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1852,7 +1853,7 @@ img {
       border-radius: 5px;
       min-height: 38px;
       // Шрифты
-      font-family: 'PT Sans';
+      font-family: 'PT Sans', "Arial", sans-serif;
       font-weight: normal;
       font-size: 13px;
       line-height: 18px;
@@ -1944,7 +1945,7 @@ img {
       transition-duration: 0.3s;
 
       // Шрифты
-      font-family: 'PT Sans';
+      font-family: 'PT Sans', "Arial", sans-serif;
       font-weight: normal;
       font-size: 17px;
       line-height: 18px;
@@ -1960,7 +1961,7 @@ img {
 
     &__range-control {
       height: 80px;
-      background-color: var(--basic-beige, #F7F3EC);
+      background-color: var(--basic-beig);
       border-radius: 5px;
       padding-top: 39px;
       box-sizing: border-box;
@@ -2023,7 +2024,7 @@ img {
       padding-top: 8px ;
       box-sizing: border-box;
       // Шрифты
-      font-family: 'PT Sans';
+      font-family: 'PT Sans', "Arial", sans-serif;
       font-size: 17px;
       line-height: 18px;
     }
@@ -2077,7 +2078,7 @@ img {
     display: block;
     word-break: break-word;
     // Шрифты
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: normal;
     font-size: 15px;
     line-height: 19px;
@@ -2141,7 +2142,7 @@ img {
     display: block;
     word-break: break-word;
     // Шрифты
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: normal;
     font-size: 15px;
     line-height: 19px;
@@ -2168,7 +2169,7 @@ img {
     &__title {
       margin: 0;
       // Шрифты
-      font-family: 'PT Sans';
+      font-family: 'PT Sans', "Arial", sans-serif;
       font-weight: normal;
       font-size: 13px;
       line-height: 18px;
@@ -2254,7 +2255,7 @@ img {
     &__item {
       display: block;
       box-sizing: border-box;
-      background-color: var(--white, white);
+      background-color: var(--white);
       border: 1px solid var(--spec-greylight-2);
       border-radius: 3px;
       box-shadow: none;
@@ -2276,7 +2277,7 @@ img {
 
       a {
         // Шрифты
-        font-family: 'PT Sans';
+        font-family: 'PT Sans', "Arial", sans-serif;
         font-weight: normal;
         font-size: 13px;
         line-height: 18px;
@@ -2319,7 +2320,7 @@ img {
     padding: 64px 0px 25px 0px;
     margin: 0;
     // Шрифты
-    font-family: 'Cuprum';
+    font-family: 'Cuprum', "Arial", sans-serif;
     font-weight: normal;
     font-size: 30px;
     line-height: 30px;
@@ -2330,7 +2331,7 @@ img {
     padding: 0px 0px 67px 0px;
     margin: 0;
      // Шрифты
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: normal;
     font-size: 13px;
     line-height: 25px;
@@ -2346,8 +2347,9 @@ img {
 .feedback-modal {
   box-sizing: border-box;
   width: 620px;
-  bottom: 355px;
-  top: auto;
+  top:50%;
+  transform: translateY(-50%);
+  bottom: auto;
 
   &__form {
     display: flex;
@@ -2384,7 +2386,7 @@ img {
 
       &::placeholder {
         // Шрифты
-        font-family: 'PT Sans';
+        font-family: 'PT Sans', "Arial", sans-serif;
         font-size: 13px;
         line-height: 24px;
         color: var(--old-price-color);
@@ -2416,7 +2418,7 @@ img {
 
       &::placeholder {
         // Шрифты
-        font-family: 'PT Sans';
+        font-family: 'PT Sans', "Arial", sans-serif;
         font-size: 13px;
         line-height: 24px;
         color: var(--old-price-color);
@@ -2441,10 +2443,11 @@ img {
 
 .map-modal {
   box-sizing: border-box;
-  bottom: 333px;
-  top:auto;
   width: 943px;
   height: 449px;
+  top:50%;
+  transform: translateY(-50%);
+  bottom: auto;
 }
 
 // shopcard-modal
@@ -2452,7 +2455,8 @@ img {
 .shopcart-modal {
   box-sizing: border-box;
   width: 620px;
-  top:400px;
+  top:50%;
+  transform: translateY(-50%);
   bottom: auto;
 
     &__title {
@@ -2463,7 +2467,7 @@ img {
       justify-content: center;
       min-height: 165px;
       // Шрифты
-      font-family: 'Cuprum';
+      font-family: 'Cuprum', "Arial", sans-serif;
       font-weight: bold;
       font-size: 24px;
       line-height: 30px;
