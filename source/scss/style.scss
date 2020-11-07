@@ -283,6 +283,11 @@ img {
     width: 100%;
     font-family: inherit;
     transition-duration: 0.3s;
+    // Шрифты
+    font-family: 'Cuprum';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
 
     &::placeholder {
       color: var(--white);
@@ -531,9 +536,6 @@ img {
     &__icon {
       margin: 0px 6px 0px -6px;
     }
-
-    &__button--registration {
-    }
 }
 
 .logined-form {
@@ -558,16 +560,30 @@ img {
     justify-content: center;
     align-items: center;
     height: 100%;
+    transition-duration: 0.3s;
     // Шрифты
     font-family: 'Cuprum';
     font-weight: normal;
     font-size: 21px;
     line-height: 21px;
     color: var(--black);
+
+    &:hover path {
+      fill: var(--active-icon-blue);
+    }
+
+    &:active {
+      color: var(--basic-greylight);
+    }
+
+    &:active path {
+      fill: var(--basic-greylight);
+    }
   }
 
   &__user-icon {
     margin-right: 20px;
+    transition-duration: 0.3s;
   }
 
   &__logout {
@@ -576,6 +592,15 @@ img {
     align-items: center;
     height: 100%;
     margin-left: 20px;
+    transition-duration: 0.3s;
+
+    &:hover path {
+      fill: var(--active-icon-blue);
+    }
+
+    &:active path {
+      fill: var(--basic-greylight);
+    }
   }
 
   &__logout-icon {
@@ -594,15 +619,45 @@ img {
 
   &__user-menu-item {
     text-decoration: none;
+    transition-duration: 0.3s;
     // Шрифты
     font-family: 'Cuprum';
     font-weight: normal;
     font-size: 16px;
     line-height: 18px;
     color: var(--popular-title);
+
+    &:hover {
+      color: var(--basic-red);
+    }
+
+    &:active {
+      color: var(--basic-greylight);
+    }
+
+    &:hover::before {
+      color: var(--basic-red);
+    }
   }
 
   &__user-menu-item--profile {
+    position: relative;
+    margin-left: 32px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -16px;
+
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+
+      background-color: var(--popular-title);
+    }
   }
 }
 
@@ -694,39 +749,45 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 20px 10px 21px 23px;
+    padding: 20px 0px 21px 23px;
     position: relative;
 
     img {
-      margin: 0 auto;
       object-fit: contain;
-      padding: 0px 0px 0px 0px;
     }
+  }
+// Модификаторы карточек с главными фичами
+  &__item--materials {
+    grid-area: f1;
+    background-color: var(--spec-orange);
 
-    &:nth-child(1) {
-      grid-area: f1;
-      background-color: var(--spec-orange);
+    .features__item-img-wrap {
+      padding-left: 14px;
     }
+  }
 
-    &:nth-child(2) {
-      grid-area: f2;
-      background-color: var(--spec-lightblue);
-    }
+  &__item--tools {
+    grid-area: f2;
+    background-color: var(--spec-lightblue);
 
-    &:nth-child(3) {
-      grid-area: f3;
-      background-color: var(--spec-lilac);
+    .features__item-img-wrap {
+      padding-left: 5px;
     }
+  }
 
-    &:nth-child(4) {
-      grid-area: f4;
-      background-color: var(--spec-lightgreen);
-    }
+  &__item--technics {
+    grid-area: f3;
+    background-color: var(--spec-lilac);
+  }
 
-    &:nth-child(5) {
-      grid-area: f5;
-      background-color: var(--spec-lightorange);
-    }
+  &__item--sales {
+    grid-area: f4;
+    background-color: var(--spec-lightgreen);
+  }
+
+  &__item--delivery {
+    grid-area: f5;
+    background-color: var(--spec-lightorange);
   }
 
   &__item--new {
@@ -796,6 +857,13 @@ img {
       background-color: var(--lightgrey-2);
     }
   }
+
+  &__item-img-wrap {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+  }
+
 
   &__slider {
     grid-area: sl;
@@ -2434,6 +2502,10 @@ img {
       .continue {
         color: var(--black);
         background-color: var(--white);
+
+        &:hover {
+          color: var(--basic-red);
+        }
       }
     }
 }

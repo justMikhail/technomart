@@ -13,16 +13,16 @@ const del = require("del");
 
 const styles = () => {
   return gulp
-    .src("source/sass/style.scss")
+    .src("source/scss/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest("build/css"))
     .pipe(csso(
-      //{
-      //  restructure: false
-      //}
+      {
+        restructure: false
+      }
     ))
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
@@ -101,9 +101,9 @@ exports.refresh = refresh;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.{sass,scss}", gulp.series(styles));
+  gulp.watch("source/scss/**/*.{sass,scss}", gulp.series(styles));
   gulp.watch("source/*.html", gulp.series(html, refresh));
   gulp.watch("source/img/**/*.{jpg,png}", gulp.series(clean, copy, refresh));
 };
 
-exports.default = gulp.series(build, server, watcher);
+exports.default = gulp.series(build, styles, server, watcher);
