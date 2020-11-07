@@ -24,10 +24,10 @@ const styles = () => {
         restructure: false
       }
     ))
-    .pipe(rename("styles.min.css"))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
-    .pipe(sync.stream());
+    .pipe(sync.stream());``
 };
 
 exports.styles = styles;

@@ -26,12 +26,12 @@ for (let i = 0; i < buyBtns.length; i++) {
 shopcartModalCloseButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   shopcartModal.classList.add(`hidden`);
-});
+})
 
 continueButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   shopcartModal.classList.add(`hidden`);
-});
+})
 
 window.addEventListener("keydown", function(evt){
       if (evt.keyCode === 27) {
