@@ -1957,6 +1957,7 @@ img {
 }
 
 // Фмльтр по цене
+
 .range-filter {
 
     &__range-control {
@@ -2038,6 +2039,7 @@ img {
 }
 
 // Фмльтр по бренду
+
 .brand-filter {
 
   &__checkbox-list {
@@ -2099,6 +2101,7 @@ img {
 }
 
 // Фмльтр по типу питания
+
 .power-filter {
   display: flex;
   flex-direction: column;
@@ -2164,6 +2167,7 @@ img {
 }
 
 // Сортировка товаров в каталоге
+
 .sort {
 
     &__title {
