@@ -12,10 +12,11 @@
   100% {transform: translateY(-50%);}
 }
 
+
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    transform: translate(0, -50%);
   }
 
   10%,
@@ -23,14 +24,14 @@
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translate(10px, -50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translate(-10px, -50%);
   }
 }
 // Миксины-----------------------------------------------------------------------------------------
